@@ -1,0 +1,26 @@
+{% extends "base.html.twig" %}
+
+{% block title %}About{% endblock %}
+
+{% block body %}
+    
+    <div class="two-col-layout">
+        <main class="main">
+            <h1>About</h1>
+            <article class="article">
+                <p>
+                    Kursen mvc (Objektorienterade webbteknologier) är en kurs med fokuset att med hjälp av PHP
+                    programmera objektorienterade konstruktioner som ska användas inom ett webbaserat ramverk.
+                </p>
+                <img src="{{ asset('build/images/computerguy.jpg') }}" width="300px" alt="">
+            </article>
+        </main>
+    
+        <aside class="aside">
+            <h2>Länkar</h2>
+            <a href="https://github.com/dbwebb-se/mvc">Kursens repo</a>
+            <a href="https://github.com/KavShi/mvc">Sidans repo</a>
+        </aside>
+    </div>
+    
+{% endblock %}
